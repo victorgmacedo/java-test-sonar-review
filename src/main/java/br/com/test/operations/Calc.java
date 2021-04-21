@@ -5,9 +5,7 @@ import java.util.stream.Stream;
 public class Calc {
 
 	public Integer calcular(Integer... values) {
-		return Stream.of(values).reduce(0, (valor, acc) -> {
-			return valor += acc;
-		});
+		return Stream.of(values).reduce(0, (valor, acc) -> valor += acc);
 	}
 	
 }
