@@ -1,20 +1,14 @@
 pipeline{
     agent any
     stages{
-        stage("A"){
+        stage("Build"){
             steps{
-                echo "========executing A========"
+                sh 'mvnw clean install'
             }
-            post{
-                always{
-                    echo "========always========"
-                }
-                success{
-                    echo "========A executed successfully========"
-                }
-                failure{
-                    echo "========A execution failed========"
-                }
+        }
+        stage("Analyzer"){
+            steps{
+                sh 'mvnw sonar:sonar'
             }
         }
     }
