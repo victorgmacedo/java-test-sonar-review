@@ -6,5 +6,10 @@ pipeline {
                 bat 'mvn clean install'
             }
         }
+        stage ('Analyze'){
+            steps{
+                bat 'mvn sonar:sonar'
+            }
+        }
     }
 }
