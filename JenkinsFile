@@ -3,6 +3,9 @@ pipeline{
     stages{
         stage("Build"){
             steps{
+                sh 'ls'
+            }
+            steps{
                 sh 'mvnw clean install'
             }
         }
