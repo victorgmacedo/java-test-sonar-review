@@ -24,8 +24,8 @@ class JavaTestApplicationTests {
 
 	@Test
 	void error_test(){
-			Integer total = calc.calcular(1,3,4);
-			Assertions.assertEquals(9, total);
+			Integer total = calc.calcular(3,1,4);
+			Assertions.assertEquals(8, total);
 	}
 
 }
