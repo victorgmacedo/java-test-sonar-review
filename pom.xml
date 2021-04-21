@@ -73,7 +73,7 @@
 			        <append>true</append>
 			        <excludes>
 			            <exclude>**/*Tests.*</exclude>
-			            <exclude>**/*br/com/test/JavaTestApplication.*</exclude>
+			            <exclude>**/JavaTestApplication.*</exclude>
 			        </excludes>
 			    </configuration>
 			    <executions>

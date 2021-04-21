@@ -22,4 +22,10 @@ class JavaTestApplicationTests {
 		Assertions.assertEquals(8, total);
 	}
 
+	@Test
+	void error_test(){
+			Integer total = calc.calcular(1,3,4);
+			Assertions.assertEquals(9, total);
+	}
+
 }
