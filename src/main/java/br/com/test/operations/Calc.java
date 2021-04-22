@@ -1,7 +1,6 @@
 package br.com.test.operations;
 
 import java.util.stream.Stream;
-import java.util.Date;
 
 public class Calc {
 
