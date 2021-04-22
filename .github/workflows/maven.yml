@@ -39,6 +39,6 @@ jobs:
   other-job:
     name: Job-Top
     runs-on: ubuntu-latest
-      steps: 
-        - name: HEHE
-          run: echo "Victor"
+    steps: 
+      - name: HEHE
+        run: echo "Victor"
